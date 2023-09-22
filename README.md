@@ -6,5 +6,5 @@ The members are:
   <li><a href="https://github.com/aishwaryats">Aishwarya T S</a></li>
   <li><a href="https://github.com/ishadeepesh">Isha Deepesh</a></li>
   <li><a href="https://github.com/jatulya">J Atulya</a></li>
-  <li><a href="https://github.com/Jyothika3\90123">Jyothika Jayan</a></li>
+  <li><a href="https://github.com/Jyothika\90123">Jyothika Jayan</a></li>
 </ul>
