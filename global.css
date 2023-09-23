@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-leelawadee-ui: "Leelawadee UI";
+  --font-luckiest-guy: "Luckiest Guy";
+  --font-kumar-one: "Kumar One";
+  --font-lexend-deca: "Lexend Deca";
+
+  /* font sizes */
+  --font-size-xl: 20px;
+
+  /* Colors */
+  --black: #1e1e1e;
+  --white: #f7f7f7;
+
+  /* Border radiuses */
+  --br-3xs: 10px;
+  --br-31xl: 50px;
+}
