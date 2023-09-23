@@ -1,0 +1,199 @@
+.heading-child,
+.main-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-child {
+  background-color: var(--white);
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 921px;
+  height: 708px;
+}
+.heading-child {
+  border-radius: 20px;
+  background: linear-gradient(rgba(255, 227, 0, 0.2), rgba(255, 227, 0, 0.2)),
+    linear-gradient(rgba(255, 120, 0, 0.2), rgba(255, 120, 0, 0.2)),
+    linear-gradient(rgba(247, 247, 247, 0.98), rgba(247, 247, 247, 0.98)),
+    #ffbc97;
+  width: 764px;
+  height: 121px;
+}
+.span {
+  font-family: var(--font-kumar-one);
+}
+.meal-matters {
+  font-size: 48px;
+  font-family: var(--font-luckiest-guy);
+}
+.welcome-to-meal-container {
+  position: absolute;
+  top: 18px;
+  left: 95px;
+  background: linear-gradient(rgba(255, 227, 0, 0.2), rgba(255, 227, 0, 0.2)),
+    linear-gradient(#ff7a05, #ff7a05),
+    linear-gradient(rgba(247, 247, 247, 0.98), rgba(247, 247, 247, 0.98)),
+    #ffbc97;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heading {
+  position: absolute;
+  top: 47px;
+  left: 91px;
+  width: 764px;
+  height: 121px;
+}
+.form-child,
+.form-item {
+  position: absolute;
+  border-radius: var(--br-31xl);
+}
+.form-child {
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+      rgba(139, 130, 130, 0.2),
+      rgba(139, 130, 130, 0.2)
+    ),
+    linear-gradient(#f7f7f7, #f7f7f7), #fcbb91;
+  width: 780px;
+  height: 430px;
+}
+.form-item {
+  top: 11px;
+  left: 11px;
+  background: linear-gradient(rgba(255, 227, 0, 0.2), rgba(255, 227, 0, 0.2)),
+    linear-gradient(#ff7a05, #ff7a05),
+    linear-gradient(rgba(247, 247, 247, 0.98), rgba(247, 247, 247, 0.98)),
+    #ffbc97;
+  width: 758px;
+  height: 408px;
+}
+.group-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background: linear-gradient(rgba(255, 227, 0, 0.2), rgba(255, 227, 0, 0.2)),
+    linear-gradient(rgba(255, 120, 0, 0.2), rgba(255, 120, 0, 0.2)),
+    linear-gradient(rgba(247, 247, 247, 0.98), rgba(247, 247, 247, 0.98)),
+    #ffbc97;
+  width: 275px;
+  height: 70px;
+}
+.dont-have-an {
+  margin: 0;
+}
+.dont-have-an-container {
+  position: absolute;
+  top: 6px;
+  left: 29px;
+}
+.rectangle-parent {
+  position: absolute;
+  top: 320px;
+  left: 272px;
+  width: 275px;
+  height: 87px;
+  text-align: center;
+}
+.group-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background: linear-gradient(rgba(255, 227, 0, 0.2), rgba(255, 227, 0, 0.2)),
+    linear-gradient(rgba(255, 120, 0, 0.2), rgba(255, 120, 0, 0.2)),
+    linear-gradient(rgba(247, 247, 247, 0.98), rgba(247, 247, 247, 0.98)),
+    #ffbc97;
+  width: 142px;
+  height: 49px;
+}
+.log-in {
+  position: absolute;
+  top: 11px;
+  left: 37px;
+}
+.group-inner,
+.rectangle-group {
+  position: absolute;
+  top: 235px;
+  left: 334px;
+  width: 142px;
+  height: 49px;
+}
+.group-inner {
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(255, 227, 0, 0.2), rgba(255, 227, 0, 0.2)),
+    linear-gradient(rgba(255, 120, 0, 0.2), rgba(255, 120, 0, 0.2)),
+    linear-gradient(rgba(247, 247, 247, 0.98), rgba(247, 247, 247, 0.98)),
+    #ffbc97;
+}
+.password,
+.rectangle-div {
+  position: absolute;
+  top: 11px;
+  left: 22px;
+}
+.rectangle-div {
+  top: 0;
+  left: 197px;
+  background: linear-gradient(rgba(255, 227, 0, 0.2), rgba(255, 227, 0, 0.2)),
+    linear-gradient(rgba(255, 120, 0, 0.2), rgba(255, 120, 0, 0.2)),
+    linear-gradient(rgba(247, 247, 247, 0.98), rgba(247, 247, 247, 0.98)),
+    #ffbc97;
+  width: 409px;
+  height: 49px;
+}
+.group-child2,
+.rectangle-container {
+  position: absolute;
+  top: 140px;
+  left: 93px;
+  width: 606px;
+  height: 49px;
+}
+.group-child2 {
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(255, 227, 0, 0.2), rgba(255, 227, 0, 0.2)),
+    linear-gradient(rgba(255, 120, 0, 0.2), rgba(255, 120, 0, 0.2)),
+    linear-gradient(rgba(247, 247, 247, 0.98), rgba(247, 247, 247, 0.98)),
+    #ffbc97;
+  width: 142px;
+  mix-blend-mode: lighten;
+}
+.form,
+.group-div,
+.username {
+  position: absolute;
+  top: 12px;
+  left: 22px;
+}
+.form,
+.group-div {
+  top: 57px;
+  left: 93px;
+  width: 606px;
+  height: 49px;
+}
+.form {
+  top: 206px;
+  left: 83px;
+  width: 780px;
+  height: 430px;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-leelawadee-ui);
+}
+.main {
+  position: relative;
+  width: 100%;
+  height: 708px;
+  text-align: left;
+  font-size: 36px;
+  color: var(--black);
+  font-family: var(--font-lexend-deca);
+}
