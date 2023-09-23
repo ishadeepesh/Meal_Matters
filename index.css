@@ -41,7 +41,7 @@
 .heading {
   position: absolute;
   top: 47px;
-  left: 91px;
+  left: 330px;
   width: 764px;
   height: 121px;
 }
@@ -182,7 +182,7 @@
 }
 .form {
   top: 206px;
-  left: 83px;
+  left: 310px;
   width: 780px;
   height: 430px;
   font-size: var(--font-size-xl);
