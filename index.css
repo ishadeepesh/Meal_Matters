@@ -51,18 +51,18 @@
 .password1 {
   top: 19.19rem;
 }
-.login1-child2 {
+.username {
   top: 16.56rem;
   background-color: var(--color-lavender);
   width: 16.63rem;
   height: 1.94rem;
 }
-.login1-child2,.login1-child3,.login1-child4 {
+.username,.password,.login1-child4 {
   position: absolute;
   left: 20rem;
   border-radius: var(--br-8xs);
 }
-.login1-child3 {
+.password {
   top: 20.06rem;
   background-color: var(--color-lavender);
   width: 16.63rem;
