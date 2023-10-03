@@ -5,27 +5,40 @@ body {
 
 :root {
   /* fonts */
+  --font-lexend-exa: "Lexend Exa";
+  --font-abhaya-libre-extrabold: "Abhaya Libre ExtraBold";
+  --font-adamina: Adamina;
+  --font-abhaya-libre-medium: "Abhaya Libre Medium";
+  --font-average-sans: "Average Sans";
+  --font-actor: Actor;
+  --font-abhaya-libre: "Abhaya Libre";
   --font-leelawadee-ui: "Leelawadee UI";
   --font-luckiest-guy: "Luckiest Guy";
   --font-kumar-one: "Kumar One";
   --font-lexend-deca: "Lexend Deca";
-  --font-lexend-exa: "Lexend Exa";
 
   /* font sizes */
   --font-size-xl: 1.25rem;
   --font-size-3xs: 0.63rem;
   --font-size-2xs: 0.69rem;
+  --font-size-11xl: 1.88rem;
+  --font-size-mini: 0.94rem;
+  --font-size-13xl: 2rem;
+  --font-size-smi: 0.81rem;
+  --font-size-5xl: 1.5rem;
 
   /* Colors */
-  --black: #1e1e1e;
-  --white: #f7f7f7;
   --color-black: #000;
   --color-white: #fff;
-  --color-lavender: #d5d5f4;
+  --indigo: #d5d5f4;
+  --black: #1e1e1e;
+
+  /* Paddings */
+  --padding-13xl: 2rem;
 
   /* Border radiuses */
-  --br-3xs: 10px;
-  --br-31xl: 50px;
   --br-8xs: 5px;
   --br-6xl: 25px;
+  --br-3xs: 10px;
+  --br-31xl: 50px;
 }
