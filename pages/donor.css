@@ -1,3 +1,28 @@
+:root{
+    --white : white;
+    --army-green: #4b5320;
+    --black : #000000;
+}
 .nav1{
+    background-color: var(--army-green);
+    height: 85px;
+    padding: 10px;
+}
+.texts{
+    color: var(--white);
+}
+.logout {
+    color: var(--black);
+    display: inline-block;
+    width: 100px;
+    height: 45px;
+    padding: 10px 15px;
+    background-color: var(--white);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
     
+}
+.logout:hover {
+    background-color: #a5ebb5; /* Light green background on hover */
 }
