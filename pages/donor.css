@@ -97,3 +97,24 @@
   .form-group {
     margin-bottom: 20px;
   }
+
+
+  .donation-requestcard,.delivery-requestcard{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding:20px;
+  }
+
+  .status-buttons{
+    background-color: #4b5320;
+    border-color: #000000;
+  }
+
+  .button-allign{
+    text-align: center;
+  }
+
+  .status-buttons:hover {
+    background-color: #43cd6f; /* Light green background on hover */
+}
