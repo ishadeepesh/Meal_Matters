@@ -5,6 +5,13 @@
    justify-content: center;
    padding-top: 120px;
 }
+.registerpage{
+    background-color:#4B5320; 
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   padding-top: 50px;
+}
 
 .login{
     background-color: white;
@@ -13,13 +20,24 @@
     border-radius: 2%;
     justify-content: center;
     display: flex;
-    padding-top:20px ;
-    
-    
+    padding-top: 20px;  
+}
+
+.register{
+    background-color: white;
+    height: 94%;
+    width:50%;
+    border-radius: 2%;
+    justify-content: center;
+    display: flex; 
 }
 
 .loginform{
     padding:100px;
+}
+
+.registerform{
+    padding: 50px;
 }
 
 .heading{
@@ -29,6 +47,7 @@
 }
 .newuser{
     text-align: center;
+    font-size: small;
 }
 
 .loginbtn{
@@ -37,6 +56,11 @@
 }
 
 .text-form{
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
+}
+
+.textarea{
+    border:1px solid;
+    border-color: #dee2e6;
 }
