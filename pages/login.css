@@ -1,0 +1,42 @@
+.loginpage{
+   background-color:#4B5320; 
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   padding-top: 120px;
+}
+
+.login{
+    background-color: white;
+    height: 80%;
+    width:45%;
+    border-radius: 2%;
+    justify-content: center;
+    display: flex;
+    padding-top:20px ;
+    
+    
+}
+
+.loginform{
+    padding:100px;
+}
+
+.heading{
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+}
+.newuser{
+    text-align: center;
+}
+
+.loginbtn{
+    background-color: #4B5320;
+    color: white;
+}
+
+.text-form{
+    font-size: 17px;
+    font-weight: 500;
+}
