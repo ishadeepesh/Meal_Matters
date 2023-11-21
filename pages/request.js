@@ -1,14 +1,4 @@
-var reqlist=[{
-    Name:'abc',
-    City:'kochi',
-    Quantity:'12kg',
-    
-},{
-    Name:'vvc',
-    City:'kochi',
-    Quantity:'17kg',
-
-}]
+var reqlist=[]
 console.log(reqlist);
 
 function renderlist(){
@@ -48,6 +38,7 @@ function renderlist(){
                         ">Decline</button>
                       </div>
                 </div>
+                <br>
                 ` 
         ;
         reqhtml+=html;
@@ -61,26 +52,26 @@ function removeItem(index) {
     reqlist.splice(index, 1);
     localStorage.setItem('reqlist', JSON.stringify(reqlist));
 }
-       function sendreq(){
-          const nameinputElement=document.querySelector('.js-name');
-          const inpname=nameinputElement.textContent;
 
-          const cityinputElement=document.querySelector('.js-city');
-          const inpcity=cityinputElement.textContent;
+function sendreq(){
+  const nameinputElement=document.querySelector('.js-name');
+  const inpname=nameinputElement.textContent;
 
-          const qtyinputElement=document.querySelector('.js-input2');
-          const inpqty=qtyinputElement.value;
+  const cityinputElement=document.querySelector('.js-city');
+  const inpcity=cityinputElement.textContent;
 
-          reqlist.push({
-            Name:inpname,
-            City:inpcity,
-            Quantity:inpqty
-            
-          });
-          localStorage.setItem('reqlist', JSON.stringify(reqlist));
-          console.log(reqlist);
+  const qtyinputElement=document.querySelector('.js-input2');
+  const inpqty=qtyinputElement.value;
 
-          qtyinputElement.value='';
-          renderlist();
-       }
+  reqlist.push({
+    Name:inpname,
+    City:inpcity,
+    Quantity:inpqty
+  });
+  localStorage.setItem('reqlist', JSON.stringify(reqlist));
+  console.log(reqlist);
+
+  qtyinputElement.value='';
+  renderlist();
+}
        

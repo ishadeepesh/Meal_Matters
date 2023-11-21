@@ -45,21 +45,19 @@
                   size="50px"
                 />
               </div>
-
-              <!--div class="mb-3">
-                <label for="exampleInputName1" class="form-label text-form"
-                  >Username</label
-                >
+              
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label text-form"
+                  >Email Id</label>&nbsp &nbsp
                 <input
-                  type="text"
-                  name="username"
+                  type="email"
+                  name="D_email"
                   class="form-control-sm textarea"
-                  id="exampleInputName1"
-                  aria-describedby="emailHelp"
-                  placeholder="Enter your username"
+                  id="email1"
+                  placeholder="Enter your email"
                   size="50px"
                 />
-              </!--div-->
+              </div>
 
               <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label text-form"
@@ -70,19 +68,6 @@
                   class="form-control-sm textarea"
                   id="Password1"
                   placeholder="Enter password"
-                  size="50px"
-                />
-              </div>
-
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label text-form"
-                  >Email Id</label>&nbsp &nbsp
-                <input
-                  type="email"
-                  name="D_email"
-                  class="form-control-sm textarea"
-                  id="exampleInputEmail1"
-                  placeholder="Enter your email"
                   size="50px"
                 />
               </div>
@@ -114,7 +99,7 @@
                 />
               </div>
 
-              <div class="mb-3">
+              <div class="mb-3 donor">
                 <label for="exampleInputText2" class="form-label text-form"
                   >Restaurant/Individual</label><br>
                 <input
@@ -127,7 +112,7 @@
                 />
               </div>
 
-              <div class="mb-3">
+              <div class="mb-3 donor">
                 <label for="exampleInputText2" class="form-label text-form"
                   >Rating</label> <br>
                 <input
@@ -166,29 +151,49 @@
     const { createClient } = supabase
     supabase = createClient('https://jdpmvcqvpoettcqrwwcp.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpkcG12Y3F2cG9ldHRjcXJ3d2NwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDA0MDM1NzEsImV4cCI6MjAxNTk3OTU3MX0.DEVGEK7cU38SsU9fgbP85ERlSLJuPO7gdt_8zcWzsxM')
 
-    const form = document.querySelector('#registerform') //selected the form
-    form.addEventListener('submit', async(event) => { 
-        event.preventDefault() 
-        
-        const formips = form.querySelectorAll('input, textarea, select')
-        let whoI = document.getElementById('who').value;
-        
-        if  (whoI==1)
-        {
-            let datas = {}
-            formips.forEach(element => {
-                const {value, name} = element //selected object has properties value and name
-                if (value) {
-                    if (name!='')
-                    datas[name] = value
-                }
-            })
-            console.log(datas)
-            const { error, data}=await supabase.from('Donor').insert([datas])
-            console.log(error, data)
+    const form = document.getElementById('registerform');
+    form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    
+    const mail = document.getElementById('email1').value
+    const passw = document.getElementById('Password1').value
+    // Creating a user to authenticate
+    const { data, error } = await supabase.auth.signUp({
+        email: mail,
+        password: passw
+    });
+
+    console.log(data)
+    if (error) {
+      console.log("error occured at signup")        
+    } else {
+        console.log("no error till signup")
+    }
+
+    const formInputs = form.querySelectorAll('input, textarea, select');
+    let whoI = document.getElementById('who').value;
+
+    if (whoI == 1) {
+        let dataObject = {};
+        formInputs.forEach(element => {
+            const { value, name } = element;
+            if (value) {
+                if (name !== '')
+                    dataObject[name] = value;
+            }
+        });
+
+        const { error, data } = await supabase.from('Donor').insert([dataObject]);
+        if (error) {
+            console.log("Error inserting data into 'Donor' table:", error);
+        } else {
+            console.log("Data inserted into 'Donor' table:", data);
         }
+
         window.location.href = 'donor.html';
-    })
+    }
+});
+
 </script>
 
 </html>
