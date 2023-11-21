@@ -7,7 +7,7 @@
 }
 .registerpage{
     background-color:#4B5320; 
-   height: 130vh;
+   height: 190vh;
    display: flex;
    justify-content: center;
    padding-top: 50px;
@@ -25,11 +25,12 @@
 
 .register{
     background-color: white;
-    height: 94%;
+    height: 130vh;
     width:50%;
     border-radius: 2%;
     justify-content: center;
     display: flex; 
+    
 }
 
 .loginform{
@@ -44,11 +45,14 @@
     font-size: 27px;
     font-weight: bold;
     text-align: center;
+    
 }
 .newuser{
     text-align: center;
     font-size: small;
 }
+
+
 
 .loginbtn{
     background-color: #4B5320;
@@ -72,5 +76,6 @@
     box-sizing: border-box;
    
 }
+
 
 
