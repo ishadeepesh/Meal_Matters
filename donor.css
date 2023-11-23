@@ -116,5 +116,18 @@
   }
 
   .status-buttons:hover {
-    background-color: #43cd6f; /* Light green background on hover */
+    background-color: #767e49; /* Light green background on hover */
+}
+.btn{
+  background-color: #4b5320;
+  border-color: #4b5320;
+}
+.btn:hover{
+  background-color: #767e49;
+}
+.logout{
+  text-align: center;
+}
+.logout:hover{
+  background-color: #767e49;
 }
